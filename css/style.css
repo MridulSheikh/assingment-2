@@ -245,20 +245,19 @@ margin-top: 0px;
              }
              /*---------------- high-light----------- */
              .high-light p{
-                 width: 90%;
+                 width: 100%;
              }
              .high-light .tittle{
                  width: 90%;
-                 margin-left: 0;
+                 margin-right: 108px;
              }
              .high-light img{
                  width: 100%;
                  height: auto;
              }
-             .high-light p,
-             .high-light h1,
-             .high-light a{
-                 margin-left: 44px;
+             .high-light{
+                 text-align: center;
+                 
              }
              /* ------------ fifa -------------- */
 
