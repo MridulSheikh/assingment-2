@@ -37,7 +37,7 @@ body{
 .soccer img{
     width: 556px;
     height: 438px;
-}
+ }
 .live{
     margin-top: 153px;
 }
@@ -207,7 +207,7 @@ padding: 7px;
 }
 .footer-content p{
 padding-bottom: 63px;
-margin-top: 20px;
+margin-top: 0px;
 }
 /* ===================== media query ========================== */
 /* ------- mobile device ----------------- */
@@ -224,6 +224,9 @@ margin-top: 20px;
     .soccer img{
         width: 350px;
         height: auto;
+    }
+    .soccer {
+        text-align: center;
     }
     .tittle{
         margin-left: 24px;
@@ -242,15 +245,20 @@ margin-top: 20px;
              }
              /*---------------- high-light----------- */
              .high-light p{
-                 width: 100%;
+                 width: 90%;
              }
              .high-light .tittle{
-                 width: 100%;
+                 width: 90%;
                  margin-left: 0;
              }
              .high-light img{
                  width: 100%;
                  height: auto;
+             }
+             .high-light p,
+             .high-light h1,
+             .high-light a{
+                 margin-left: 44px;
              }
              /* ------------ fifa -------------- */
 
@@ -284,11 +292,95 @@ margin-top: 20px;
                width: 70%;
            }
            .social-icon a img{
-            width: 20px;
+            width: 30px;
             margin: 5px;
         }
         .footer-content p{
             padding-bottom: 100px;
             margin-top: 0;
         }
+}
+/*================== for tablet device ============================*/
+@media only screen and (min-width:688px) and (max-width:992px){
+  
+    /*-------------- home -----------------------*/
+    .grid-of-2{
+        width: 100%;
+    }
+    .tittle h1{
+        font-size: 45px;
+        line-height: 66px;
+        }
+        .soccer img{
+            width: 350px;
+            height: auto;
+        }
+        .tittle{
+            margin-left: 40px;
+        }
+        .home{
+            height: 555px;
+        }
+        /* ---------------- players---------------------- */
+        .players{
+            grid-template-columns: repeat(2,1fr);
+            width: 100%;
+            grid-column-gap: 0px;
+        }
+        /* ----------------- highlight -------------------- */
+        .high-light p{
+            width: 90%;
+        }
+        .high-light .tittle{
+            width: 90%;
+            margin-left: 0;
+        }
+        .high-light img{
+            width: 90%;
+            height: auto;
+        }
+        .high-light p,
+        .high-light h1,
+        .high-light a{
+            margin-left: 48px;
+        }
+        /* -------------- fifa ---------------- */
+        
+        .fifa-logo img,
+        .about{
+            width: 100%;
+        }
+        .box-about{
+            margin-top: 24%;
+        }
+        /*----------------------- uefa ----------------------*/
+        .player-uefa,.uefa-png,.match img{
+            width: 62%;
+            height: auto;
+        }
+        .uefa-tittle{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .player-uefa{
+            display: none;
+        }
+        .uefa-tittle{
+            height: auto;
+        }
+        .uefa-img{
+            margin-top: 3%;
+            margin-left: 0;
+        }
+        /* ---------- footer ----------------- */
+        .company-logo img{
+            width: 50%;
+        }
+        .social-icon a img{
+         width: 33px;
+         margin: 5px;
+     }
+     .footer-content p{
+         padding-bottom: 100px;
+         margin-top: 0;
+     }
 }
