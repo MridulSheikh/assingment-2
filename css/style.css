@@ -213,15 +213,13 @@ margin-top: 20px;
 /* ------- mobile device ----------------- */
 
 @media only screen and (max-width: 688px){
+    /*------------- home--------- */
     .grid-of-2{
         grid-template-columns: repeat(1,1fr);
         width: 100%;
     }
     .home{
         height: 100%;
-    }
-    .container, .high-light, .fifa, .uefa-champion, footer{
-        display: none;
     }
     .soccer img{
         width: 350px;
@@ -237,5 +235,60 @@ margin-top: 20px;
     .live{
             margin-top: 60px;
         }
+             /*---------------- players------------ */
+             .players{
+                 grid-template-columns: repeat(1,1fr);
+                 width: 100%;
+             }
+             /*---------------- high-light----------- */
+             .high-light p{
+                 width: 100%;
+             }
+             .high-light .tittle{
+                 width: 100%;
+                 margin-left: 0;
+             }
+             .high-light img{
+                 width: 100%;
+                 height: auto;
+             }
+             /* ------------ fifa -------------- */
 
+           .fifa-logo img,
+           .about{
+               width: 100%;
+           }
+           .box-about{
+               margin-top: 24%;
+           }
+           /* ------------------  uefa ----------------- */
+           .player-uefa,.uefa-png,.match img{
+               width: 100%;
+               height: auto;
+           }
+           .uefa-tittle{
+               grid-template-columns: repeat(1,1fr);
+           }
+           .player-uefa{
+               display: none;
+           }
+           .uefa-tittle{
+               height: auto;
+           }
+           .uefa-img{
+               margin-top: 36%;
+               margin-left: 0;
+           }
+           /*---------------- footer------------ */
+           .company-logo img{
+               width: 70%;
+           }
+           .social-icon a img{
+            width: 20px;
+            margin: 5px;
+        }
+        .footer-content p{
+            padding-bottom: 100px;
+            margin-top: 0;
+        }
 }
